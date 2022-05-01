@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-find",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "Find elements in an array-like object that satisfy a test condition.",
   "license": "Apache-2.0",
   "author": {
@@ -44,7 +44,8 @@
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/assert-is-string": "^0.0.x",
     "@stdlib/string-format": "^0.0.x",
-    "@stdlib/types": "^0.0.x"
+    "@stdlib/types": "^0.0.x",
+    "@stdlib/utils-index-of": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.0.x",
