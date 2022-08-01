@@ -24,23 +24,7 @@ limitations under the License.
 
 > Find elements in an array-like object that satisfy a test condition.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-find
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
@@ -48,8 +32,32 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 
 <!-- eslint-disable stdlib/no-redeclare -->
 
+To use in Observable,
+
 ```javascript
-var find = require( '@stdlib/utils-find' );
+find = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var find = require( 'path/to/vendor/umd/utils-find/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.find;
+})();
+</script>
 ```
 
 #### find( arr, \[opts,] clbk )
@@ -205,10 +213,15 @@ var vals = find( data, opts, condition );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var round = require( '@stdlib/math-base-special-round' );
-var randu = require( '@stdlib/random-base-randu' );
-var find = require( '@stdlib/utils-find' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Simulate the data...
 var data = new Array( 100 );
@@ -229,6 +242,11 @@ function condition( val ) {
 
 var vals = find( data, opts, condition );
 console.log( vals.join( '\n' ) );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
