@@ -44,6 +44,11 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
+import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-find/tags). For example,
+
+```javascript
 import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@v0.1.0-esm/index.mjs';
 ```
 
@@ -208,7 +213,7 @@ var vals = find( data, opts, condition );
 
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@v0.1.0-esm/index.mjs';
+import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@esm/index.mjs';
 
 // Simulate the data...
 var data = new Array( 100 );
