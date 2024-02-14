@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@esm/index.mjs';
+import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@v0.2.0-esm/index.mjs';
 ```
 
 #### find( arr, \[opts,] clbk )
@@ -208,7 +208,7 @@ var vals = find( data, opts, condition );
 
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@esm/index.mjs';
+import find from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-find@v0.2.0-esm/index.mjs';
 
 // Simulate the data...
 var data = new Array( 100 );
