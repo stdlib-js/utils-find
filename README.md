@@ -79,9 +79,9 @@ Finds elements in an array-like object that satisfy a test condition. The functi
 
 The `callback` is provided three arguments:
 
--   **element**: the current element
--   **index**: the current element's index
--   **array**: the input `array`, `typed array` or `string`
+-   **element**: the current element.
+-   **index**: the current element's index.
+-   **array**: the input `array`, `typed array` or `string`.
 
 By default, `k` is the length of `arr` and `returns` is set to `indices`.
 
@@ -282,7 +282,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
